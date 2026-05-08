@@ -3,7 +3,7 @@ import axios from 'axios';
 import { getCached, setCache } from '../utils/cache';
 
 const HF_URL = 'https://router.huggingface.co/v1/chat/completions';
-const HF_MODEL = 'mistralai/Mistral-7B-Instruct-v0.3';
+const HF_MODEL = 'meta-llama/Llama-3.1-8B-Instruct';
 const MAX_MESSAGES = 30;
 const CACHE_KEY = 'chat_messages';
 
