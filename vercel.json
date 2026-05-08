@@ -1,8 +1,20 @@
 {
   "rewrites": [
     {
+      "source": "/api/iss/:path*",
+      "destination": "http://api.open-notify.org/:path*"
+    },
+    {
+      "source": "/api/gnews/:path*",
+      "destination": "https://news.google.com/:path*"
+    },
+    {
       "source": "/api/news",
       "destination": "/api/news"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
